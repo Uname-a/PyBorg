@@ -556,6 +556,11 @@ class ModIRC(SingleServerIRCBot):
                     for x in xrange (2, len (command_list)):
                         phrase = phrase + str(command_list[x]) + " "
                     self.output("\x01ACTION " + phrase + "\x01", ("", command_list[1], "", c, e))
+            #force a save of known words
+            elif command_list[0] == "!save":
+                if len(command_list) == 1:
+                    msg = "Attempting forced save"
+                    self.pyborg.save_all()
             # Save changes
             save_myname = self.settings.myname
             if self.wanted_myname is not None:
