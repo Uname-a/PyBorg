@@ -87,7 +87,7 @@ The following orders are available only on IRC:
        of the bot
 
     * !join [channel]: connect the bot to [channel]
-    * !leaves [channel]: fact of leaving the channel [channel]
+    * !part [channel]: fact of leaving the channel [channel]
     * !chans: list the channels where the bot is connected
 
     * !ignore of [nick]: ignore nick

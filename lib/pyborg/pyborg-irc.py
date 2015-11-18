@@ -365,7 +365,7 @@ class ModIRC(SingleServerIRCBot):
 
         # double reply chance if the text contains our nickname :-)
         if body_contains_me:
-            replyrate = replyrate * 2
+            replyrate = 100
 
         # Always reply to private messages
         if e.eventtype() == "privmsg":
